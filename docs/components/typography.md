@@ -3,7 +3,7 @@ title: Typography
 permalink: /foundation/typography
 layout: component
 collection_name: components
-section: components
+section: foundation
 status: Proposed
 intro: >-
   A clear typographic hierarchy is critical to the effective communication of
