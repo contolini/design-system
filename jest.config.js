@@ -1,11 +1,11 @@
 module.exports = {
-  verbose: false,
+  verbose: true,
   transform: {
     '^.+\\.jsx?$': 'babel-jest'
   },
   collectCoverage: true,
   collectCoverageFrom: [
-    '<rootDir>/packages/**/*.js'
+    '<rootDir>/packages/cfpb-*/cfpb-*.js'
   ],
   coveragePathIgnorePatterns: [
     '<rootDir>/gulpfile.js',
