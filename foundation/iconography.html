@@ -2,6 +2,8 @@
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--><!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]--><!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]--><!--[if gt IE 8]><!--><html lang="en" class="no-js"> <!--<![endif]-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Google Tag Manager code -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-WH4L8LB');</script>
   <title>Iconography - CFPB Design System</title>
   <meta name="description" content="CFPB's design system">
   <meta charset="utf-8">
@@ -14,10 +16,26 @@
       docElement.className = docElement.className.replace(/(^|\s)no-js(\s|$)/, '$1$2');
   </script>
 </head>
-<body class="t-component">
+<body class="t-variation">
+  <!-- Google Tag Manager code -->
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WH4L8LB" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  <div class="skip-nav">
+    <a class="skip-nav_link" href="#main">
+        Skip to main content
+    </a>
+  </div>
+  <div class="m-global-eyebrow
+            m-global-eyebrow__horizontal">
+    <div class="wrapper
+                wrapper__match-content">
+        <div class="a-tagline">
+            An official website of the United States government
+        </div>
+    </div>
+</div>
+
   <div class="body-wrapper">
-    <a class="skip-link u-visually-hidden focusable" href="#main">Skip to Main Content</a>
-<header role="banner" class="site-header">
+    <header role="banner" class="site-header">
   <div class="wrapper">
     <div class="title content-l_col content-l_col-1-3">
       <h1 class="title_heading">
@@ -26,233 +44,486 @@
         </a>
       </h1>
     </div>
-    <nav class="global-nav content-l_col content-l_col-2-3">
+
+    <form id="search-form" action="/design-system/search" method="get">
+    <label class="u-visually-hidden" for="search-box">Search:</label>
+    <input type="text" id="search-box" class="a-text-input" name="searchQuery" placeholder="enter your query">
+    <button class="a-btn" type="submit">Search!</button>
+</form>
+
+
+    <nav class="global-nav content-l_col content-l_col-2-3" role="navigation">
       <ul class="global-nav_list">
-        
-          <li class="nav-list-item">
+        <li class="nav-list-item">
             <a class="" href="/design-system/getting-started">
             Getting Started
             </a>
-            </li>
-        
-          <li class="nav-list-item">
+        </li>
+        <li class="nav-list-item">
             <a class="active" href="/design-system/foundation">
             Foundation
             </a>
-            </li>
-        
-          <li class="nav-list-item">
+        </li>
+        <li class="nav-list-item">
             <a class="" href="/design-system/components">
             Components
             </a>
-            </li>
-        
-          <li class="nav-list-item">
+        </li>
+        <li class="nav-list-item">
             <a class="" href="/design-system/templates">
             Templates
             </a>
-            </li>
-        
+        </li>
       </ul>
     </nav>
   </div> <!-- /.wrapper -->
 </header>
 
-    <main class="content content__1-3" id="main" role="main">
+    <main class="content content__1-3 content__bleedbar-expandable" id="main" role="main">
   <div class="content_bar"></div>
   <div class="content_wrapper">
-    <aside class="content_sidebar">
-        
-    <!-- todo: remove from sidebar -->
+    <aside class="content_sidebar
+                o-expandable
+                o-expandable__padded
+                o-expandable__background
+                o-expandable__border">
+        <button class="o-expandable_header o-expandable_target" title="Expand content">
+            <h3 class="h5 o-expandable_header-left o-expandable_label">
+                In this section
+            </h3>
+            <span class="o-expandable_header-right o-expandable_link">
+                <span class="o-expandable_cue o-expandable_cue-open">
+                    <span class="u-visually-hidden-on-mobile">Show</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 1200" class="cf-icon-svg"><path d="M500 105.2c-276.1 0-500 223.9-500 500s223.9 500 500 500 500-223.9 500-500-223.9-500-500-500zm263.1 550.7H549.6v213.6c0 27.6-22.4 50-50 50s-50-22.4-50-50V655.9H236c-27.6 0-50-22.4-50-50s22.4-50 50-50h213.6V342.3c0-27.6 22.4-50 50-50s50 22.4 50 50v213.6h213.6c27.6 0 50 22.4 50 50s-22.5 50-50.1 50z"></path></svg>
+                </span>
+                <span class="o-expandable_cue o-expandable_cue-close">
+                    <span class="u-visually-hidden-on-mobile">Hide</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 1200" class="cf-icon-svg"><path d="M500 105.2c-276.1 0-500 223.9-500 500s223.9 500 500 500 500-223.9 500-500-223.9-500-500-500zm263.1 550.7H236c-27.6 0-50-22.4-50-50s22.4-50 50-50h527.1c27.6 0 50 22.4 50 50s-22.4 50-50 50z"></path></svg>
+                </span>
+            </span>
+        </button>
+        <div class="o-expandable_content
+                    nav-secondary">
+            
+
+
+
+
+
+
+
+
+<ul class="m-list m-list__unstyled">
     
-
-    <!-- todo: remove from sidebar -->
-    
-        
-        
-        <ul>        
+    <li class="m-list_item u-mb15">
+        <span class="h5">Brand guidelines</span>
+        <ul class="m-list m-list__links">
             
-            <li>
                 
-                    Design principles
-                
-                
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/design-system/foundation/general-principles">General principles</a>
-                            
-                        </li>
-                        
-                        <li>
-                            
-                            <a href="/design-system/foundation/data-visualization">Data visualization</a>
-                            
-                        </li>
-                        
-                        <li>
-                            
-                            <a href="/design-system/foundation/forms">Forms</a>
-                            
-                        </li>
-                        
-                    </ul>
-                
-
-            </li>
             
-            <li>
                 
-                    <a href="/design-system/foundation/color">Color</a>
-                
-                
-
-            </li>
             
-            <li>
                 
-                    <a href="/design-system/foundation/iconography">Iconography</a>
-                
-                
-
-            </li>
             
-            <li>
                 
-                    Identity
-                
-                
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/design-system/foundation/beam-pattern">Beam pattern</a>
-                            
-                        </li>
-                        
-                        <li>
-                            
-                            <a href="/design-system/foundation/logo">Logo</a>
-                            
-                        </li>
-                        
-                        <li>
-                            
-                            <a href="/design-system/foundation/seal">Seal</a>
-                            
-                        </li>
-                        
-                    </ul>
-                
-
-            </li>
             
-            <li>
                 
-                    Imagery
-                
-                
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/design-system/foundation/illustration">Illustration</a>
-                            
-                        </li>
-                        
-                        <li>
-                            
-                            <a href="/design-system/foundation/photography">Photography</a>
-                            
-                        </li>
-                        
-                    </ul>
-                
-
-            </li>
             
-            <li>
                 
-                    Multimedia
-                
-                
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/design-system/foundation/animation">Animation</a>
-                            
-                        </li>
-                        
-                        <li>
-                            
-                            <a href="/design-system/foundation/video">Video</a>
-                            
-                        </li>
-                        
-                    </ul>
-                
-
-            </li>
             
-            <li>
                 
-                    <a href="/design-system/foundation/typography">Typography</a>
-                
-                
-
-            </li>
             
-            <li>
                 
-                    <a href="/design-system/foundation/user-research">User research</a>
+            
                 
+            
                 
-
-            </li>
+                <li class="m-list_item">
+                    <a class="m-list_link" href="/design-system/foundation/animation">Animation</a>
+                </li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <li class="m-list_item">
+                    <a class="m-list_link" href="/design-system/foundation/beam-pattern">Beam pattern</a>
+                </li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <li class="m-list_item">
+                    <a class="m-list_link" href="/design-system/foundation/color">Color</a>
+                </li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <li class="m-list_item">
+                    <a class="m-list_link" href="/design-system/foundation/iconography">Iconography</a>
+                </li>
+                
+            
+                
+                <li class="m-list_item">
+                    <a class="m-list_link" href="/design-system/foundation/illustration">Illustration</a>
+                </li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <li class="m-list_item">
+                    <a class="m-list_link" href="/design-system/foundation/logo">Logo</a>
+                </li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <li class="m-list_item">
+                    <a class="m-list_link" href="/design-system/foundation/photography">Photography</a>
+                </li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <li class="m-list_item">
+                    <a class="m-list_link" href="/design-system/foundation/seal">Seal</a>
+                </li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <li class="m-list_item">
+                    <a class="m-list_link" href="/design-system/foundation/typography">Typography</a>
+                </li>
+                
+            
+                
+                <li class="m-list_item">
+                    <a class="m-list_link" href="/design-system/foundation/video">Video</a>
+                </li>
+                
+            
+                
             
         </ul>
-        
+    </li>
     
-
-    <!-- todo: remove from sidebar -->
+    <li class="m-list_item u-mb15">
+        <span class="h5">Principles</span>
+        <ul class="m-list m-list__links">
+            
+                
+                <li class="m-list_item">
+                    <a class="m-list_link" href="/design-system/foundation/general-principles">General principles</a>
+                </li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <li class="m-list_item">
+                    <a class="m-list_link" href="/design-system/foundation/accessibility">Accessibility</a>
+                </li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <li class="m-list_item">
+                    <a class="m-list_link" href="/design-system/foundation/data-visualization">Data Visualization</a>
+                </li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <li class="m-list_item">
+                    <a class="m-list_link" href="/design-system/foundation/forms">Forms</a>
+                </li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </ul>
+    </li>
     
-
-    <!-- todo: remove from sidebar -->
-    
+</ul>
 
 
+        </div>
     </aside>
         <section class="content_main">
 
-    <div class="component-header">
-        <h2>
+    <div class="component-header u-mb30">
+        <h1>
             Iconography
-            <div class="a-badge status-Proposed" title="This component has not yet been migrated to the Design System">
-                Proposed
-            </div>
-        </h2>
-        <div id="toggle-code">
-            <a class="a-btn" id="toggle-code-btn" href="#">
-                <span class="hide-button">
-                    Hide code &amp; specs
-                    <span class="a-btn_icon a-btn_icon__on-right">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 784.5 1200" class="cf-icon-svg"><path d="M719.5 515H65c-35.9 0-65 29.1-65 65s29.1 65 65 65h654.5c35.9 0 65-29.1 65-65s-29.1-65-65-65z"></path></svg>
-                    </span>
-                </span>
-                <span class="show-button">
-                    Show code &amp; specs
-                    <span class="a-btn_icon a-btn_icon__on-right">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 784.5 1200" class="cf-icon-svg"><path d="M719.5 515H457.3V252.7c0-35.9-29.1-65-65-65s-65 29.1-65 65V515H65c-35.9 0-65 29.1-65 65s29.1 65 65 65h262.3v262.3c0 35.9 29.1 65 65 65s65-29.1 65-65V645h262.3c35.9 0 65-29.1 65-65s-29.2-65-65.1-65z"></path></svg>
-                    </span>
-                </span>
-            </a>
-        </div>
+        </h1>
     </div>
 
     
-        <section id="intro" class="u-mt20 u-mb20">
+    <ul class="m-list m-list__horizontal u-mb30">
+        
+        
+        <li class="m-list_item">
+            <a class="m-list_link" href="#"></a>
+        </li>
+        
+        
+    </ul>
+    
+
+    
+        <section id="description" class="u-mb30">
             <p>Icons visually reinforce an interface action, file type, status, or category.</p>
 
 <p>They are visually simple, quickly recognizable, and easy to understand. They are almost always used in context with descriptive text and function to reinforce the message of that text.</p>
@@ -266,35 +537,28 @@
         </section>
     
 
-    <ul class="m-list m-list__horizontal u-mb20">
-        <li class="m-list_item">
-            <a class="m-list_link" href="#variations">Variations</a>
-        </li>
-        <li class="m-list_item">
-            <a class="m-list_link" href="#usage">Usage</a>
-        </li>
-        <li class="m-list_item">
-            <a class="m-list_link" href="#accessibility">Accessibility</a>
-        </li>
-        <li class="m-list_item">
-            <a class="m-list_link" href="#research">Research</a>
-        </li>
-    </ul>
-
-    <section class="sticky-header">
-        <h3 id="variations">Variations</h3>
+    
+    
+    <section class="o-variation_group" id="">
         
-        <div class="u-mt30">
-            <!-- Name -->
-            <h4>Extra small</h4>
 
-            <!-- Description -->
-            <p>Used inline with text.</p>
+        
 
+        
+        <div class="m-variation">
+
+            <div class="m-variation_name">
+                <h3>Extra small</h3>
+            </div>
+
+            <div class="m-variation_description">
+                <p>Used inline with text.</p>
+
+            </div>
 
             <!-- Live code example -->
             
-            <div class="live-code-example">
+            <div class="a-live_code">
                 <a class="a-link a-link__icon" href="#">
     <span class="a-link_text">Example with icon</span>
     <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 651.7 1200" class="cf-icon-svg"><path d="M507.1 692.8c-15.6-15.6-40.9-15.6-56.6 0l-85.1 85.1V466.6c0-22.1-17.9-40-40-40s-40 17.9-40 40V778l-85.1-85.1c-15.6-15.6-40.9-15.6-56.6 0-15.6 15.6-15.6 40.9 0 56.6L297 902.9c7.5 7.5 17.7 11.7 28.3 11.7s20.8-4.2 28.3-11.7l153.3-153.4c15.8-15.7 15.8-41 .2-56.7z"></path><path d="M30 161c-16.5 0-30 13.5-30 30v827.8c0 16.5 13.5 30 30 30h591.7c16.5 0 30-13.5 30-30V343.7L469 161H30zm389.6 60v134.8c0 19.9 16.3 36.2 36.2 36.2h135.9V988.8H60V221h359.6z"></path></svg>
@@ -311,31 +575,38 @@
             </div>
             
 
-            <div class="govuk-tabs u-mt30" data-module="tabs" data-toggle-code>
-                <h5 class="govuk-tabs__title">
-                Code snippets
-                </h5>
+            
+            
+            
+            
+            
 
+            <div class="a-toggle_code">
+                <button href="#extra-small-code-1" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#extra-small-code-1" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+            </div>
+
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="extra-small-code-1">
                 <ul class="govuk-tabs__list">
-                    <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#html-code-snippet-1">
-                        HTML                        </a>
-                    </li>
-                    <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#jinja-code-snippet-1">
-                        Jinja
+                    
+                    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                        <a class="govuk-tabs__tab" href="#extra-small-html-code-snippet-1">
+                            HTML code snippet
                         </a>
                     </li>
+                    
+                    
+                    
+                    
                 </ul>
 
                 <!-- HTML snippet -->
-                <section class="govuk-tabs__panel" id="html-code-snippet-1">
-                    
+                
+                <section class="govuk-tabs__panel" id="extra-small-html-code-snippet-1">
                     <div class="variation-code-snippet">
-                        <h6 class="variation-code-snippet-title">HTML</h6>
-                        
-                            <div class="source-code">
-                                <pre><code class="language-html">&lt;a class="a-link a-link__icon" href="#"&gt;
+                        <h4 class="variation-code-snippet-title">HTML code snippet</h4>
+                        <div class="source-code">
+                            <pre><code class="language-html">&lt;a class="a-link a-link__icon" href="#"&gt;
     &lt;span class="a-link_text"&gt;Example with icon&lt;/span&gt;
     {% include icons/download.svg %}
 &lt;/a&gt;
@@ -348,48 +619,34 @@
     &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 651.7 1200" class="cf-icon-svg"&gt;&lt;path d="M507.1 692.8c-15.6-15.6-40.9-15.6-56.6 0l-85.1 85.1V466.6c0-22.1-17.9-40-40-40s-40 17.9-40 40V778l-85.1-85.1c-15.6-15.6-40.9-15.6-56.6 0-15.6 15.6-15.6 40.9 0 56.6L297 902.9c7.5 7.5 17.7 11.7 28.3 11.7s20.8-4.2 28.3-11.7l153.3-153.4c15.8-15.7 15.8-41 .2-56.7z"/&gt;&lt;path d="M30 161c-16.5 0-30 13.5-30 30v827.8c0 16.5 13.5 30 30 30h591.7c16.5 0 30-13.5 30-30V343.7L469 161H30zm389.6 60v134.8c0 19.9 16.3 36.2 36.2 36.2h135.9V988.8H60V221h359.6z"/&gt;&lt;/svg&gt;
 &lt;/a&gt;
 --&gt;</code></pre>
-                            </div>
-                        
+                        </div>
                     </div>
-                    
                 </section>
+                
 
                 <!-- Jinja snippet -->
-                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="jinja-code-snippet-1">
-                    <div class="variation-jinja-code-snippet">
-                        <h6 class="variation-jinja-code-snippet-title">Jinja</h6>
-                        
+                
 
-                    </div>
-                </section>
+                <!-- Implementation details -->
+                
+
+                <!-- Specs -->
+                
 
             </div>
 <!-- .govuk-tabs -->
-
             
 
-            
-
-                
-                
-
-                
-                
-                
-
-                
-
-                
-
-            
-
+        </div>
         
-        <div class="u-mt30">
-            <!-- Name -->
-            <h4>Small</h4>
+        <div class="m-variation">
 
-            <!-- Description -->
-            <ul>
+            <div class="m-variation_name">
+                <h3>Small</h3>
+            </div>
+
+            <div class="m-variation_description">
+                <ul>
   <li>
     <p>Used on buttons</p>
   </li>
@@ -398,81 +655,75 @@
   </li>
 </ul>
 
+            </div>
 
             <!-- Live code example -->
             
-            <div class="live-code-example">
-                 
+            <div class="a-live_code">
+                
             </div>
             
 
-            <div class="govuk-tabs u-mt30" data-module="tabs" data-toggle-code>
-                <h5 class="govuk-tabs__title">
-                Code snippets
-                </h5>
+            
+            
+            
+            
+            
 
+            <div class="a-toggle_code">
+                <button href="#small-code-2" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#small-code-2" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+            </div>
+
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="small-code-2">
                 <ul class="govuk-tabs__list">
-                    <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#html-code-snippet-2">
-                        HTML                        </a>
-                    </li>
-                    <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#jinja-code-snippet-2">
-                        Jinja
+                    
+                    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                        <a class="govuk-tabs__tab" href="#small-html-code-snippet-2">
+                            HTML code snippet
                         </a>
                     </li>
+                    
+                    
+                    
+                    
                 </ul>
 
                 <!-- HTML snippet -->
-                <section class="govuk-tabs__panel" id="html-code-snippet-2">
-                    
+                
+                <section class="govuk-tabs__panel" id="small-html-code-snippet-2">
                     <div class="variation-code-snippet">
-                        <h6 class="variation-code-snippet-title">HTML</h6>
-                        
-                            <div class="source-code">
-                                <pre><code class="language-html"> </code></pre>
-                            </div>
-                        
+                        <h4 class="variation-code-snippet-title">HTML code snippet</h4>
+                        <div class="source-code">
+                            <pre><code class="language-html"></code></pre>
+                        </div>
                     </div>
-                    
                 </section>
+                
 
                 <!-- Jinja snippet -->
-                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="jinja-code-snippet-2">
-                    <div class="variation-jinja-code-snippet">
-                        <h6 class="variation-jinja-code-snippet-title">Jinja</h6>
-                        
+                
 
-                    </div>
-                </section>
+                <!-- Implementation details -->
+                
+
+                <!-- Specs -->
+                
 
             </div>
 <!-- .govuk-tabs -->
-
             
 
-            
-
-                
-                
-
-                
-                
-                
-
-                
-
-                
-
-            
-
+        </div>
         
-        <div class="u-mt30">
-            <!-- Name -->
-            <h4>Medium</h4>
+        <div class="m-variation">
 
-            <!-- Description -->
-            <ul>
+            <div class="m-variation_name">
+                <h3>Medium</h3>
+            </div>
+
+            <div class="m-variation_description">
+                <ul>
   <li>
     <p>Social media sharing sets</p>
   </li>
@@ -481,81 +732,75 @@
   </li>
 </ul>
 
+            </div>
 
             <!-- Live code example -->
             
-            <div class="live-code-example">
-                 
+            <div class="a-live_code">
+                
             </div>
             
 
-            <div class="govuk-tabs u-mt30" data-module="tabs" data-toggle-code>
-                <h5 class="govuk-tabs__title">
-                Code snippets
-                </h5>
+            
+            
+            
+            
+            
 
+            <div class="a-toggle_code">
+                <button href="#medium-code-3" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#medium-code-3" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+            </div>
+
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="medium-code-3">
                 <ul class="govuk-tabs__list">
-                    <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#html-code-snippet-3">
-                        HTML                        </a>
-                    </li>
-                    <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#jinja-code-snippet-3">
-                        Jinja
+                    
+                    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                        <a class="govuk-tabs__tab" href="#medium-html-code-snippet-3">
+                            HTML code snippet
                         </a>
                     </li>
+                    
+                    
+                    
+                    
                 </ul>
 
                 <!-- HTML snippet -->
-                <section class="govuk-tabs__panel" id="html-code-snippet-3">
-                    
+                
+                <section class="govuk-tabs__panel" id="medium-html-code-snippet-3">
                     <div class="variation-code-snippet">
-                        <h6 class="variation-code-snippet-title">HTML</h6>
-                        
-                            <div class="source-code">
-                                <pre><code class="language-html"> </code></pre>
-                            </div>
-                        
+                        <h4 class="variation-code-snippet-title">HTML code snippet</h4>
+                        <div class="source-code">
+                            <pre><code class="language-html"></code></pre>
+                        </div>
                     </div>
-                    
                 </section>
+                
 
                 <!-- Jinja snippet -->
-                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="jinja-code-snippet-3">
-                    <div class="variation-jinja-code-snippet">
-                        <h6 class="variation-jinja-code-snippet-title">Jinja</h6>
-                        
+                
 
-                    </div>
-                </section>
+                <!-- Implementation details -->
+                
+
+                <!-- Specs -->
+                
 
             </div>
 <!-- .govuk-tabs -->
-
             
 
-            
-
-                
-                
-
-                
-                
-                
-
-                
-
-                
-
-            
-
+        </div>
         
-        <div class="u-mt30">
-            <!-- Name -->
-            <h4>Large</h4>
+        <div class="m-variation">
 
-            <!-- Description -->
-            <ul>
+            <div class="m-variation_name">
+                <h3>Large</h3>
+            </div>
+
+            <div class="m-variation_description">
+                <ul>
   <li>
     <p>Inline with large text links</p>
   </li>
@@ -564,235 +809,217 @@
   </li>
 </ul>
 
+            </div>
 
             <!-- Live code example -->
             
-            <div class="live-code-example">
-                 
+            <div class="a-live_code">
+                
             </div>
             
 
-            <div class="govuk-tabs u-mt30" data-module="tabs" data-toggle-code>
-                <h5 class="govuk-tabs__title">
-                Code snippets
-                </h5>
+            
+            
+            
+            
+            
 
+            <div class="a-toggle_code">
+                <button href="#large-code-4" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#large-code-4" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+            </div>
+
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="large-code-4">
                 <ul class="govuk-tabs__list">
-                    <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#html-code-snippet-4">
-                        HTML                        </a>
-                    </li>
-                    <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#jinja-code-snippet-4">
-                        Jinja
+                    
+                    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                        <a class="govuk-tabs__tab" href="#large-html-code-snippet-4">
+                            HTML code snippet
                         </a>
                     </li>
+                    
+                    
+                    
+                    
                 </ul>
 
                 <!-- HTML snippet -->
-                <section class="govuk-tabs__panel" id="html-code-snippet-4">
-                    
+                
+                <section class="govuk-tabs__panel" id="large-html-code-snippet-4">
                     <div class="variation-code-snippet">
-                        <h6 class="variation-code-snippet-title">HTML</h6>
-                        
-                            <div class="source-code">
-                                <pre><code class="language-html"> </code></pre>
-                            </div>
-                        
+                        <h4 class="variation-code-snippet-title">HTML code snippet</h4>
+                        <div class="source-code">
+                            <pre><code class="language-html"></code></pre>
+                        </div>
                     </div>
-                    
                 </section>
+                
 
                 <!-- Jinja snippet -->
-                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="jinja-code-snippet-4">
-                    <div class="variation-jinja-code-snippet">
-                        <h6 class="variation-jinja-code-snippet-title">Jinja</h6>
-                        
+                
 
-                    </div>
-                </section>
+                <!-- Implementation details -->
+                
+
+                <!-- Specs -->
+                
 
             </div>
 <!-- .govuk-tabs -->
-
             
 
-            
-
-                
-                
-
-                
-                
-                
-
-                
-
-                
-
-            
-
+        </div>
         
-        <div class="u-mt30">
-            <!-- Name -->
-            <h4>Extra large</h4>
+        <div class="m-variation">
 
-            <!-- Description -->
-            <ul>
+            <div class="m-variation_name">
+                <h3>Extra large</h3>
+            </div>
+
+            <div class="m-variation_description">
+                <ul>
   <li>Paired with primary headers</li>
 </ul>
 
+            </div>
 
             <!-- Live code example -->
             
-            <div class="live-code-example">
-                 
+            <div class="a-live_code">
+                
             </div>
             
 
-            <div class="govuk-tabs u-mt30" data-module="tabs" data-toggle-code>
-                <h5 class="govuk-tabs__title">
-                Code snippets
-                </h5>
+            
+            
+            
+            
+            
 
+            <div class="a-toggle_code">
+                <button href="#extra-large-code-5" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#extra-large-code-5" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+            </div>
+
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="extra-large-code-5">
                 <ul class="govuk-tabs__list">
-                    <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#html-code-snippet-5">
-                        HTML                        </a>
-                    </li>
-                    <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#jinja-code-snippet-5">
-                        Jinja
+                    
+                    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                        <a class="govuk-tabs__tab" href="#extra-large-html-code-snippet-5">
+                            HTML code snippet
                         </a>
                     </li>
+                    
+                    
+                    
+                    
                 </ul>
 
                 <!-- HTML snippet -->
-                <section class="govuk-tabs__panel" id="html-code-snippet-5">
-                    
+                
+                <section class="govuk-tabs__panel" id="extra-large-html-code-snippet-5">
                     <div class="variation-code-snippet">
-                        <h6 class="variation-code-snippet-title">HTML</h6>
-                        
-                            <div class="source-code">
-                                <pre><code class="language-html"> </code></pre>
-                            </div>
-                        
+                        <h4 class="variation-code-snippet-title">HTML code snippet</h4>
+                        <div class="source-code">
+                            <pre><code class="language-html"></code></pre>
+                        </div>
                     </div>
-                    
                 </section>
+                
 
                 <!-- Jinja snippet -->
-                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="jinja-code-snippet-5">
-                    <div class="variation-jinja-code-snippet">
-                        <h6 class="variation-jinja-code-snippet-title">Jinja</h6>
-                        
+                
 
-                    </div>
-                </section>
+                <!-- Implementation details -->
+                
+
+                <!-- Specs -->
+                
 
             </div>
 <!-- .govuk-tabs -->
-
             
 
-            
-
-                
-                
-
-                
-                
-                
-
-                
-
-                
-
-            
-
+        </div>
         
-        <div class="u-mt30">
-            <!-- Name -->
-            <h4>Animated icon</h4>
+        <div class="m-variation">
 
-            <!-- Description -->
-            
+            <div class="m-variation_name">
+                <h3>Animated icon</h3>
+            </div>
 
+            <div class="m-variation_description">
+                
+
+            </div>
 
             <!-- Live code example -->
             
-            <div class="live-code-example">
-                 
+            <div class="a-live_code">
+                
             </div>
             
 
-            <div class="govuk-tabs u-mt30" data-module="tabs" data-toggle-code>
-                <h5 class="govuk-tabs__title">
-                Code snippets
-                </h5>
+            
+            
+            
+            
+            
 
+            <div class="a-toggle_code">
+                <button href="#animated-icon-code-6" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#animated-icon-code-6" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+            </div>
+
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="animated-icon-code-6">
                 <ul class="govuk-tabs__list">
-                    <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#html-code-snippet-6">
-                        HTML                        </a>
-                    </li>
-                    <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#jinja-code-snippet-6">
-                        Jinja
+                    
+                    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                        <a class="govuk-tabs__tab" href="#animated-icon-html-code-snippet-6">
+                            HTML code snippet
                         </a>
                     </li>
+                    
+                    
+                    
+                    
                 </ul>
 
                 <!-- HTML snippet -->
-                <section class="govuk-tabs__panel" id="html-code-snippet-6">
-                    
+                
+                <section class="govuk-tabs__panel" id="animated-icon-html-code-snippet-6">
                     <div class="variation-code-snippet">
-                        <h6 class="variation-code-snippet-title">HTML</h6>
-                        
-                            <div class="source-code">
-                                <pre><code class="language-html"> </code></pre>
-                            </div>
-                        
+                        <h4 class="variation-code-snippet-title">HTML code snippet</h4>
+                        <div class="source-code">
+                            <pre><code class="language-html"></code></pre>
+                        </div>
                     </div>
-                    
                 </section>
+                
 
                 <!-- Jinja snippet -->
-                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="jinja-code-snippet-6">
-                    <div class="variation-jinja-code-snippet">
-                        <h6 class="variation-jinja-code-snippet-title">Jinja</h6>
-                        
+                
 
-                    </div>
-                </section>
+                <!-- Implementation details -->
+                
+
+                <!-- Specs -->
+                
 
             </div>
 <!-- .govuk-tabs -->
-
             
 
-            
-
-                
-                
-
-                
-                
-                
-
-                
-
-                
-
-            
-
+        </div>
         
-        <div class="u-mt30">
-            <!-- Name -->
-            <h4>Icon library</h4>
+        <div class="m-variation">
 
-            <!-- Description -->
-            <h5 id="navigation-icons">Navigation icons</h5>
+            <div class="m-variation_name">
+                <h3>Icon library</h3>
+            </div>
+
+            <div class="m-variation_description">
+                <h5 id="navigation-icons">Navigation icons</h5>
 
 <table class="icon-table">
   <thead>
@@ -1258,6 +1485,26 @@
       <td>piggy-bank</td>
       <td>retirement</td>
     </tr>
+    <tr>
+      <td>
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 994.88 1200" class="cf-icon-svg"><path d="M912.85,497.33H874.35A344.17,344.17,0,0,0,795.8,366.08,322.14,322.14,0,0,1,830.59,182a19.13,19.13,0,0,0,2-6.43,18.68,18.68,0,0,0-16.27-20.86,18.3,18.3,0,0,0-11.69,2.38L616.2,266.73a344.09,344.09,0,0,0-69.52-7.11H402.06A344.61,344.61,0,0,0,63.94,537.47a66.92,66.92,0,0,0,0,133.7A344.77,344.77,0,0,0,158.32,848q8.74,8.74,18,16.76v145.52a35.22,35.22,0,0,0,35.17,35.12H319.46a35.21,35.21,0,0,0,35.16-35.12V945.68A340.48,340.48,0,0,0,402.06,949H546.68a340.53,340.53,0,0,0,47.48-3.35v64.66a35.22,35.22,0,0,0,35.17,35.12H737.26a35.21,35.21,0,0,0,35.16-35.12V864.81q9.31-8,18-16.76A344,344,0,0,0,874.35,711.3h38.51c45.1,0,82-36.94,82-82.08V579.37A82.29,82.29,0,0,0,912.85,497.33ZM385.26,319.89H576.07a35.16,35.16,0,1,1,0,70.32H385.26a35.16,35.16,0,1,1,0-70.32Zm260.12,233.6-146,252.9a39.36,39.36,0,0,1-30.76,19.53c-1.05.1-2.2.15-3.34.15A39.29,39.29,0,0,1,435,811.89l-81.66-98a39.37,39.37,0,0,1,60.5-50.39l45.55,54.67,117.77-204a39.37,39.37,0,0,1,68.2,39.35Z"></path></svg>
+</td>
+      <td>
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 1200" class="cf-icon-svg"><path d="M420.83,451.24H555.49a24.82,24.82,0,1,0,0-49.63H420.83a24.82,24.82,0,1,0,0,49.63Z"></path><path d="M594.24,528.53a27.8,27.8,0,0,0-38,10.17l-83.12,144L441,644.09a27.78,27.78,0,1,0-42.7,35.56L456,748.84a27.73,27.73,0,0,0,21.35,10c.8,0,1.61,0,2.35-.1A27.78,27.78,0,0,0,501.37,745l103-178.48A27.81,27.81,0,0,0,594.24,528.53Z"></path><path d="M500,100C223.86,100,0,323.86,0,600s223.86,500,500,500,500-223.86,500-500S776.14,100,500,100ZM851.07,619.92a58.09,58.09,0,0,1-57.89,57.93H766a242.79,242.79,0,0,1-59.24,96.51q-6.11,6.17-12.7,11.83v102.7a24.85,24.85,0,0,1-24.82,24.79H593.08a24.86,24.86,0,0,1-24.82-24.79V843.25a240.33,240.33,0,0,1-33.51,2.37H432.68a240.29,240.29,0,0,1-33.48-2.37v45.63a24.85,24.85,0,0,1-24.82,24.79H298.22a24.86,24.86,0,0,1-24.82-24.79V786.18q-6.57-5.66-12.73-11.83a243.32,243.32,0,0,1-66.61-124.83,47.23,47.23,0,0,1,0-94.36A243.21,243.21,0,0,1,432.68,359.07H534.75a242.84,242.84,0,0,1,49.07,5l133-77.39a12.92,12.92,0,0,1,8.25-1.68,13.19,13.19,0,0,1,11.48,14.72,13.5,13.5,0,0,1-1.41,4.54A227.35,227.35,0,0,0,710.57,434.2,242.9,242.9,0,0,1,766,526.84h27.18a58.08,58.08,0,0,1,57.89,57.89Z"></path></svg>
+</td>
+      <td>piggy-bank-check</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 884.82 1200" class="cf-icon-svg"><path d="M855.05,186.49H539a31.15,31.15,0,0,0-20.54,49.9l66.24,85.89,9.45,12.25L442.41,450.78,290.64,334.55l9.45-12.25,66.24-85.89a31.15,31.15,0,0,0-20.54-49.9h-316C8.88,187.43-6,209.23,2.38,229.61L80.92,529.93a31.16,31.16,0,0,0,53.5,7.18l59-76.53,17.8-23.08L377.78,565l-.37,383.71a64.77,64.77,0,1,0,129.54,0l.37-383.93L673.58,437.49l17.8,23.08,59,76.53a31.16,31.16,0,0,0,53.5-7.18L882.44,229.6C890.83,209.23,875.94,187.43,855.05,186.49Z"></path></svg>
+</td>
+      <td>
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 1200" class="cf-icon-svg"><path d="M500.48,100C224.34,99.74.26,323.38,0,599.52S223.38,1099.74,499.52,1100,999.74,876.62,1000,600.48,776.62,100.26,500.48,100ZM839.3,374.39,778.74,606a24,24,0,0,1-41.25,5.53l-45.51-59-13.73-17.8-128.2,98.18-.28,296a49.94,49.94,0,1,1-99.89,0L450.16,633,321.75,534.69,308,552.49l-45.51,59A24,24,0,0,1,221.26,606L160.7,374.4c-6.46-15.71,5-32.52,21.12-33.24H425.5a24,24,0,0,1,15.84,38.48l-51.08,66.23L383,455.32l117,89.62,117-89.63-7.29-9.45-51.08-66.23a24,24,0,0,1,15.84-38.48H818.18C834.28,341.87,845.77,358.68,839.3,374.39Z"></path></svg>
+</td>
+      <td>split</td>
+      <td> </td>
+    </tr>
   </tbody>
 </table>
 
@@ -1486,82 +1733,79 @@
   </tbody>
 </table>
 
+            </div>
 
             <!-- Live code example -->
             
-            <div class="live-code-example">
-                 
+            <div class="a-live_code">
+                
             </div>
             
 
-            <div class="govuk-tabs u-mt30" data-module="tabs" data-toggle-code>
-                <h5 class="govuk-tabs__title">
-                Code snippets
-                </h5>
+            
+            
+            
+            
+            
 
+            <div class="a-toggle_code">
+                <button href="#icon-library-code-7" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#icon-library-code-7" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+            </div>
+
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="icon-library-code-7">
                 <ul class="govuk-tabs__list">
-                    <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#html-code-snippet-7">
-                        HTML                        </a>
-                    </li>
-                    <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#jinja-code-snippet-7">
-                        Jinja
+                    
+                    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                        <a class="govuk-tabs__tab" href="#icon-library-html-code-snippet-7">
+                            HTML code snippet
                         </a>
                     </li>
+                    
+                    
+                    
+                    
                 </ul>
 
                 <!-- HTML snippet -->
-                <section class="govuk-tabs__panel" id="html-code-snippet-7">
-                    
+                
+                <section class="govuk-tabs__panel" id="icon-library-html-code-snippet-7">
                     <div class="variation-code-snippet">
-                        <h6 class="variation-code-snippet-title">HTML</h6>
-                        
-                            <div class="source-code">
-                                <pre><code class="language-html"> </code></pre>
-                            </div>
-                        
+                        <h4 class="variation-code-snippet-title">HTML code snippet</h4>
+                        <div class="source-code">
+                            <pre><code class="language-html"></code></pre>
+                        </div>
                     </div>
-                    
                 </section>
+                
 
                 <!-- Jinja snippet -->
-                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="jinja-code-snippet-7">
-                    <div class="variation-jinja-code-snippet">
-                        <h6 class="variation-jinja-code-snippet-title">Jinja</h6>
-                        
+                
 
-                    </div>
-                </section>
+                <!-- Implementation details -->
+                
+
+                <!-- Specs -->
+                
 
             </div>
 <!-- .govuk-tabs -->
-
             
 
-            
-
-                
-                
-
-                
-                
-                
-
-                
-
-                
-
-            
-
+        </div>
         
+    </section>
+    
     
 
     
-        <section class="sticky-header">
-            <h3 id="usage">Usage</h3>
-            <p>
-                </p>
+    
+        <section class="sticky-header u-mb45">
+            <h2 id="usage">Usage</h2>
+            <div class="content_line__wide content_line content_line u-mb20"></div>
+                
+                    <p>
+                    </p>
 <h4 id="content-guidelines">Content guidelines</h4>
 
 <h5 id="color">Color</h5>
@@ -1635,6 +1879,8 @@
 <h5 id="inline-svg-background">Inline SVG background</h5>
 <p>In some cases we embed an SVG as a background image. To accomplish this, a custom less plugin is used to inject the SVG icon source file inline into the CSS <code class="highlighter-rouge">background-image</code> property. This is exposed via a mixin, <code class="highlighter-rouge">.u-svg-inline-bg( @name )</code>, where <code class="highlighter-rouge">@name</code> is the SVG icon canonical name.</p>
 
+                    
+                
             
         </section>
     
@@ -1643,14 +1889,14 @@
 
     
 
-    <div class="content-l">
+    <div class="content-l u-mb45">
         
 
         
     </div>
 <!-- .content-l -->
 
-<!-- .content_main -->
+</section><!-- .content_main -->
 
         <div class="o-editor_link" id="edit-page">
             <a class="a-btn" href="/design-system/admin/#/collections/foundation/entries/iconography" title="Edit this page in Netlify CMS">
@@ -1665,22 +1911,28 @@
             </a>
         </div>
   </div>
-
+</main>
 
     <footer class="footer" role="contentinfo">
     <div class="wrapper">
+
+        <hr>
+
         
+        <div class="block block__sub">
+            <small>
+                <strong>Page last edited:</strong>
+                <time datetime="2020-05-01 17:35:42 +0000">
+                     5:35:42 PM May 01, 2020
+                </time>
+            </small>
+        </div>
+        
+
     </div>
 </footer>
 
   </div>
-  <script src="/design-system/dist/js/design-system.js" charset="utf-8"></script>
-</div>
-</div>
-</div>
-</div>
-</div></section></section>
-</div></main>
-</div>
+  <script src="/design-system/dist/js/main.js" charset="utf-8"></script>
 </body>
 </html>

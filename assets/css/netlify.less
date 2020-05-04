@@ -2,6 +2,7 @@
 	position: fixed;
 	bottom: 30px;
 	right: 30px;
+    z-index: 1;
 
     &#edit-page {
     	bottom: 75px;
@@ -29,6 +30,15 @@
 			margin-left: 0.4375em;
 		}
 	}
+}
+
+.t-homepage {
+
+	// On the homepage there's only one button so reposition it to the bottom
+	.o-editor_link#edit-page {
+		bottom: 30px;
+    }
+
 }
 
 // Don't show the toggle code button in the Netlify CMS preview pane

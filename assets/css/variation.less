@@ -1,0 +1,55 @@
+/* ==========================================================================
+   Variation page template
+   ========================================================================== */
+
+.t-variation {
+    .m-slug-header__warning {
+        .a-heading {
+            border-top: 5px solid @red;
+        }
+    }
+    .content_main {
+        .content_line__wide {
+            .respond-to-min( @bp-med-min, {
+                margin-left: -30px;
+            } );
+        }
+    }
+}
+
+.o-variation_group {
+    border: 1px solid @gray-40;
+    border-bottom: none;
+    margin: 2rem 0;
+    padding: 2rem 2rem 0;
+
+    &_title {
+        border-bottom: 1px solid @gray-40;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    &_description {
+        margin-bottom: 2rem;
+    }
+}
+
+.m-variation {
+    &_name {
+        margin-top: 2rem;
+    }
+
+    &:first-child .m-variation_name {
+        margin-top: 0;
+    }
+}
+
+// Override the stripes that appear in responsive tables
+.variation-code-specs {
+    table {
+        border: none;
+    }
+    td {
+        background-color: @white;
+    }
+}

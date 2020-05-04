@@ -1,85 +1,71 @@
 /* ==========================================================================
    Secondary Nav
+   Creates an expandable show/hide toggle nav on small screens, and a regular left sidebar on large screens
+   Use the following classes on the sidebar container element to add this styling:
+        .content_sidebar
+        .o-expandable
+        .o-expandable__padded
+        .o-expandable__background
+    And use these for child div where the navigation links are:
+        .o-expandable_content
+        .nav-secondary
    ========================================================================== */
 
-.nav-secondary {
-    margin-bottom: unit(30px / @base-font-size-px, em);
+.content_sidebar {
+    &.o-expandable {
 
-    &_list {
-        margin: 0;
-        padding: 0;
-    }
+        padding: unit( 7.5px / @base-font-size-px, em ) 0px 0px;
 
-    &_item {
-        list-style: none;
-
-        .respond-to-min(801px, {
-            & + & {
-                margin-top: 10px;
-            }
-        });
-    }
-
-    &_link {
-        @font-size-small: 16px;
-        @font-size-large: 18px;
-
-        .respond-to-max(800px, {
-            display: block;
-            // width: 100%; // Needed to override button styles
-            padding: unit((@grid_gutter-width / 2) / @font-size-small, em)
-                     unit(@grid_gutter-width / @font-size-small, em);
-            border-bottom-style: solid;
-            border-width: 0; // Needed to override button styles
-            border-bottom-width: 1px;
-            background: @gray-10;
-            font-size: unit(@font-size-small / @base-font-size-px, em);
-            font-weight: 500;
-            .u-link__colors(@dark-gray, @dark-gray, @dark-gray, @dark-gray, @dark-gray,
-                            @gray-20, @gray-20, @gray-20, @gray-20, @gray-20);
-            text-align: left; // Needed to override button styles
-        });
-
-        .respond-to-max(600px, {
-            padding-left: unit((@grid_gutter-width / 2) / @font-size-small, em);
-            padding-right: unit((@grid_gutter-width / 2) / @font-size-small, em);
-        });
-
-        .respond-to-min(801px, {
-            display: inline-block;
-            padding: unit(5px / @font-size-large, em)
-                     unit(15px / @font-size-large, em);
-            border-left-style: solid;
-            border-left-width: 5px;
-            font-size: unit(@font-size-large / @base-font-size-px, em);
-            font-weight: 500;
-            .u-link__colors(@pacific, @pacific, @black, @black, @black,
-                            transparent, transparent, @green, @green, @green);
-        });
-
-        &__current {
-            .respond-to-max(800px, {
-                display: none;
-            });
-            .respond-to-min(801px, {
-                .u-link__colors(@black, @black, @black, @black, @black,
-                                @green, @green, @green, @green, @green);
+        .o-expandable_header {
+            .respond-to-min(@bp-med-min, {
+                .u-visually-hidden();
             });
         }
 
-        &__button {
-            width: 100%;
-            font-weight: bold;
-            text-align: left;
-            text-transform: uppercase;
-
-            &:focus {
-                outline: thin dotted;
-            }
-
-            .respond-to-min(801px, {
-                display: none;
+        .o-expandable_content {
+            .respond-to-min(@bp-med-min, {
+                margin-top: unit( 30px / @base-font-size-px, em );
+                padding-left: 0;
             });
+        }
+
+        .o-expandable_content__collapsed {
+            .respond-to-min(@bp-med-min, {
+                max-height: initial !important;
+                overflow: visible;
+                display: block;
+            });
+        }
+    }
+
+    &.o-expandable__padded {
+        .o-expandable_content {
+            &:before {
+                .respond-to-min(@bp-med-min, {
+                    border: none;
+                });
+            }
+        }
+    }
+
+    &.o-expandable__background {
+        .respond-to-min(@bp-med-min, {
+            background: transparent;
+        });
+    }
+
+    .m-list_link {
+        border: none;
+
+        &:visited {
+            color: @link-text;
+        }
+
+        &:hover {
+            border-bottom: 1px solid @link-underline-active;
+            color: @link-text-active;
         }
     }
 }
+
+

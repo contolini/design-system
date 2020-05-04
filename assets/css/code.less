@@ -11,9 +11,7 @@ pre[class*="language-"] {
 	text-shadow: 0 1px white;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	text-align: left;
-	white-space: pre;
 	word-spacing: normal;
-	word-break: normal;
 	word-wrap: normal;
 	line-height: 1.5;
 
@@ -214,14 +212,11 @@ pre {
 code {
   padding: .25em .5em;
   font-size: 85%;
-  color: #bf616a;
-  background-color: #f9f9f9;
   border-radius: 3px;
 }
 
 pre {
   display: block;
-  margin: 1em 0;
   padding: 1em;
   font-size: .8em;
   line-height: 1.4;
@@ -239,15 +234,22 @@ pre {
   }
 }
 
+.a-live_code {
+	margin: 2rem 0 1rem;
+}
+
 /* Pygments via Jekyll */
 .highlight {
-  margin-bottom: 1rem;
-  border-radius: 4px;
+    margin-bottom: 1rem;
+    border-radius: 4px;
 }
 .highlight pre {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .source-code pre {
-	overflow-x: scroll;
+    background: none;
+    clear: both;
+    margin: 0;
+    padding: 40px;
 }
